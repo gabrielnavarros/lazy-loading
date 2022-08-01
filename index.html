@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://gabrielnavaros.github.io/lazy-loading/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Manipulation of DOM and Lazy Loading of images using  Vanilla JavaScript"
+    />
+    <!--
+      Snowpack will replace https://gabrielnavaros.github.io/lazy-loading/ with the value you have for `baseUrl` in `snowpack.config.js`.
+      Make sure to update it with your GitHub Page URL. https://<your-username>.github.io/<your-repo-name>
+
+      More about config options:
+      - https://www.snowpack.dev/reference/configuration#buildoptions.baseurl
+    -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://gabrielnavaros.github.io/lazy-loading/_dist_/index.css"
+    />
+    <title>Lazy Loading</title>
+  </head>
+  <body>
+    <!--
+      This HTML file is a template.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+
+      Start modyfing from here.
+    -->
+    <div class="py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <p
+          class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase"
+        >
+          Platzi Workshop
+        </p>
+        <h3
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+        >
+          Lazy Loading and Manipulation of DOM
+        </h3>
+        <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 mx-auto">
+          Vanilla JavaScript Plugin for load images with lazy loading, the images will not downloaded until they are visible on the screen.
+        </p>
+      </div>
+    </div>
+
+    <fieldset class="text-center">
+      <p class="p-3">
+        <legend class="mx-auto text-sm text-gray-500">
+          Add new image at the end of the list
+        </legend>
+      </p>
+      <button
+        type="submit"
+        class="py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+      >
+        Add image
+      </button>
+      <p class="mt-4">
+        <button
+          type="reset"
+          class="font-medium text-indigo-600 hover:text-indigo-500"
+        >
+          Clean
+        </button>
+      </p>
+    </fieldset>
+    <div class="mt-4" id="images"></div>
+
+
+    <!-- Add more scripts here -->
+    <script type="module" src="https://gabrielnavaros.github.io/lazy-loading/_dist_/index.js"></script>
+  </body>
+</html>
